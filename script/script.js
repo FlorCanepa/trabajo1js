@@ -1,7 +1,23 @@
-console.log("clase: ciclos e iteraciones");
-// ejemplo 1: estructura simple del ciclo FOR .
-let multiplicador  = parseInt(prompt(¿Con cuál número querés hacer la multiplicación?));
-for (let multiplicando = 0; multiplicando < array.length; multiplicando++) {
-    const element = array[multiplicando];
-    
+let suma = 0;
+let cantidadPersonas = parseInt(prompt("Ingresar la cantidad de edades/personas a calcular: "), 10);
+
+while (isNaN(cantidadPersonas) || cantidadPersonas < 1) {
+  cantidadPersonas = parseInt(prompt("SOLO ingresar numeros mayores a cero, no LETRAS."), 10);
 }
+
+for (let i = 0; i < cantidadPersonas; i++) {
+  let edad = "";
+  
+  while (edad === "" || isNaN(edad) || edad === "0") {
+    edad = prompt("Ingresa la edad de la persona numero " + (i + 1) + ":");
+    if (edad === "" || isNaN(edad) || edad === "0") {
+      alert("SOLO ingresar numeros mayores a cero, no LETRAS.");
+    }
+  }
+
+  suma += parseInt(edad, 10);
+}
+
+let promedio = suma / cantidadPersonas;
+
+alert("El promedio de todas las edades ingresadas es: " + promedio.toFixed(2));
