@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Carrito test</title>
+</head>
+
+<body>
+  <h1>Carrito de compras</h1>
+  
+  <ul id="lista-productos"></ul>
+  
+  <p id="total-carrito"></p>
+  
+  <button id="boton-vaciar">Vaciar carrito</button>
+  
+  <button id="boton-comprar">Comprar</button>
+  
+  <h2>Stock disponible:</h2>
+  
+  <section class="sectionProductos">
+            
+    <div class="boxProductos">
+         <figure>
+            <img class="imgs" src="../img/monitor.jpg" alt="Monitor">
+            <figcaption class="text-pr text-center">Monitor Gamer 165Hz 27"</figcaption>
+            <p class="text-center text-black">$120,000</p>
+            <button id="boton-agregar-1">Monitor Gamer ($120000)</button>
+        </figure> 
+    </div>
+   
+    <div class="boxProductos">
+        <figure>
+            <img class="imgs" src="../img/cpu.jpg" alt="CPU">
+            <figcaption class="text-pr text-center">COMBO CPU Armada</figcaption>
+            <p class="text-center text-black">$200,000</p>
+            <button id="boton-agregar-2">PC Gamer ($200000)</button>
+        </figure>
+    </div>
+    <div class="boxProductos">
+        <figure>
+            <img class="imgs" src="../img/rtx.jpg" alt="RTX">
+            <figcaption class="text-pr text-center">Placa de video RTX 4090</figcaption>
+            <p class="text-center text-black">$390,000</p>
+            <button id="boton-agregar-3">GPU Gamer ($390000)</button>
+          </figure>
+    </div>
+    
+
+  <script src="../script/carrito.js"></script>
+</body>
+</html>
